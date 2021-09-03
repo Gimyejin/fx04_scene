@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="148.0" prefWidth="305.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="ex01.Controller">
+   <children>
+      <Label layoutX="47.0" layoutY="41.0" text="ID" />
+      <Label layoutX="26.0" layoutY="73.0" text="Password" />
+      <TextField fx:id="fxid" layoutX="106.0" layoutY="37.0" />
+      <PasswordField fx:id="fxpwd" layoutX="106.0" layoutY="69.0" />
+     																 <!-- 로그인 버튼을 누르면 LoginProc메소드를 실행할것임
+       --><Button layoutX="33.0" layoutY="111.0" mnemonicParsing="false" onAction="#LoginProc" text="로그인" />
+      <Button layoutX="138.0" layoutY="111.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="45.0" text="취 소" />
+      <Button layoutX="222.0" layoutY="111.0" mnemonicParsing="false" text="회원가입" />
+   </children>
+</AnchorPane>
