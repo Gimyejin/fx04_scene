@@ -1,26 +1,26 @@
-package ex03;
+package quiz;
 
 import java.io.IOException;
 
+import quiz.Controller;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class MainClass extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws IOException {
-		FXMLLoader loader=new FXMLLoader(getClass().getResource("eventTest.fxml"));
-		Parent root = loader.load();
-		Scene sc = new Scene(root);
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("eventTest.fxml"));
+		AnchorPane root = loader.load();
+		Scene scene = new Scene(root);
 		
-		Controller ct=loader.getController();
-		ct.setRoot(root);
+		Controller ctl = loader.getController();
+		ctl.setRoot(root);
 		
-		
-		primaryStage.setScene(sc);
+		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
 

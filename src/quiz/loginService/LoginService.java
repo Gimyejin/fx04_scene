@@ -1,4 +1,4 @@
-package ex03.loginService;
+package quiz.loginService;
 
 import javafx.scene.Parent;
 
